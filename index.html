@@ -1,121 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech4You - Gadgets</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech4You Linktree</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    .container {
-      max-width: 500px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .logo img {
-      width: 120px;
-      border-radius: 10px;
-    }
-    h1 {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-    .product {
-      display: flex;
-      align-items: center;
-      background: #f8f8f8;
-      margin: 8px 0;
-      padding: 8px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #333;
-      transition: 0.3s;
-    }
-    .product:hover {
-      background: #e6f0ff;
-    }
-    .product img {
-      width: 50px;
-      height: 50px;
-      border-radius: 6px;
-      margin-right: 10px;
-      object-fit: cover;
-    }
-    .product span {
-      text-align: left;
-      font-size: 14px;
-      font-weight: bold;
-    }
+    body { font-family: Arial, sans-serif; background:#f9f9f9; text-align:center; }
+    .container { max-width:600px; margin:auto; padding:20px; }
+    .product { background:white; border-radius:12px; padding:15px; margin:15px 0;
+               box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width:100%; max-width:250px; border-radius:8px; }
+    .product a { display:inline-block; margin-top:10px; padding:10px 15px;
+                 background:#0073e6; color:white; text-decoration:none;
+                 border-radius:6px; font-weight:bold; }
+    .product a:hover { background:#005bb5; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">
-      <img src="https://i.postimg.cc/3J2kB3fY/logo-tech4you.png" alt="Tech4You Logo">
+    <h1>Tech4You Products</h1>
+
+    <!-- Product 41 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/51181cMWQ-L._AC_SL1000_.jpg" alt="Amazon Fire Tv Stick 4K Max">
+      <h3>Amazon Fire Tv Stick 4K Max</h3>
+      <a href="https://amzn.to/45eJ9jA" target="_blank">View on Amazon</a>
     </div>
-    <h1>Tech4You - Gadgets</h1>
-    <div id="products"></div>
+
+    <!-- Product 42 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71gY9E+cTaS._AC_SL1500_.jpg" alt="Air Tag 4 pack">
+      <h3>Air Tag 4 pack</h3>
+      <a href="https://amzn.to/3IVxMpi" target="_blank">View on Amazon</a>
+    </div>
+
+    <!-- Product 43 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81g7IL9F65L._AC_SL1500_.jpg" alt="Norelco Philips Multigroomer">
+      <h3>Norelco Philips Multigroomer</h3>
+      <a href="https://amzn.to/3UBiEjs" target="_blank">View on Amazon</a>
+    </div>
+
+    <!-- Product 44 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81GA292cm2L._AC_SL1500_.jpg" alt="Philips Norelco OneBlade 360 Pro">
+      <h3>Philips Norelco OneBlade 360 Pro Face+ Body</h3>
+      <a href="https://amzn.to/45u3G4X" target="_blank">View on Amazon</a>
+    </div>
+
+    <!-- Product 45 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71byeXH0bfL._AC_SL1500_.jpg" alt="Philips Sonecare 4100">
+      <h3>Philips Sonecare 4100 Rechargeable Electric Toothbrush</h3>
+      <a href="https://amzn.to/4kZ5Eih" target="_blank">View on Amazon</a>
+    </div>
+
   </div>
-  <script>
-    const products = [
-      {name:"Anker 622 Magnetic Battery",img:"https://m.media-amazon.com/images/I/41xhMcE5GQL._AC_SL1420_.jpg",link:"https://amzn.to/4nIccEN"},
-      {name:"UGREEN 100W",img:"https://m.media-amazon.com/images/I/51ak8IPPh1L._AC_SL1500_.jpg",link:"https://amzn.to/4kGThaG"},
-      {name:"Canon Mirrorless 24-105",img:"https://m.media-amazon.com/images/I/61lKwvtzRzL._AC_UY327_FMwebp_QL65_.jpg",link:"https://amzn.to/4kHuGCD"},
-      {name:"Asus ROG Strix G16 2025",img:"https://i.postimg.cc/cHLKj61W/2025-07-14-125808.png",link:"https://amzn.to/4lTflQq"},
-      {name:"Skytech Gaming",img:"https://i.postimg.cc/d1C0gdMz/2025-07-14-130315.png",link:"https://amzn.to/4nM7RjR"},
-      {name:"Seagate Portable Drive",img:"https://i.postimg.cc/nVYmz85N/2025-07-14-130912.png",link:"https://amzn.to/4o14w0y"},
-      {name:"MacBook 13 inch",img:"https://i.postimg.cc/Gpw3GtTK/2025-07-14-131244.png",link:"https://amzn.to/4lrfxX7"},
-      {name:"Dell Monitor 1920x1080",img:"https://i.postimg.cc/NjTBstCH/2025-07-14-131343.png",link:"https://amzn.to/4lWSkMt"},
-      {name:"DJI Osmo",img:"https://i.postimg.cc/x1KVrRqG/2025-07-14-131502.png",link:"https://amzn.to/462tohQ"},
-      {name:"Ninja NC301",img:"https://i.postimg.cc/P54hpyhX/2025-07-14-131631.png",link:"https://amzn.to/4eMiLSx"},
-      {name:"Gaggia RI9380-46",img:"https://i.postimg.cc/wxVkrs6t/2025-07-14-131953.png",link:"https://amzn.to/3GH1gqa"},
-      {name:"Breville Barista",img:"https://i.postimg.cc/hjwK4GnV/2025-07-14-132117.png",link:"https://amzn.to/3GydC3Z"},
-      {name:"Gaggia RI9781-46",img:"https://i.postimg.cc/L8RgFxN2/2025-07-14-132237.png",link:"https://amzn.to/3Tzkelz"},
-      {name:"DeLonghi Espresso",img:"https://i.postimg.cc/g02wnrC7/2025-07-14-132323.png",link:"https://amzn.to/4lKFikQ"},
-      {name:"Lavazza Espresso",img:"https://i.postimg.cc/yxcxwRRD/2025-07-14-132413.png",link:"https://amzn.to/4lBqOEn"},
-      {name:"Smeg Espresso Pressure",img:"https://i.postimg.cc/bN0dgQ8M/2025-07-14-132521.png",link:"https://amzn.to/40f4Nmd"},
-      {name:"Smeg Variable Electric Kettle",img:"https://i.postimg.cc/15S38f6K/2025-07-14-132613.png",link:"https://amzn.to/44Qdzst"},
-      {name:"Smeg 1950s Retro Style",img:"https://i.postimg.cc/Dfr23nD4/2025-07-14-132716.png",link:"https://amzn.to/46HNspT"},
-      {name:"Smeg Blender",img:"https://i.postimg.cc/DwMhPZWH/2025-07-14-132804.png",link:"https://amzn.to/44uJWOq"},
-      {name:"Smeg Toaster",img:"https://i.postimg.cc/x1hrb4hS/2025-07-14-132905.png",link:"https://amzn.to/3GI3iGw"},
-      {name:"Sony WH-1000XM4",img:"https://i.postimg.cc/qqMDFsSL/2025-07-14-132955.png",link:"https://amzn.to/4nKsY64"},
-      {name:"Sennheiser",img:"https://i.postimg.cc/t4Pk2v7b/2025-07-14-133043.png",link:"https://amzn.to/3TzOkW3"},
-      {name:"Razer Kraken Kitty",img:"https://i.postimg.cc/k4jvBkYQ/2025-07-14-133131.png",link:"https://amzn.to/40fS5Ug"},
-      {name:"Amazon Fire TV",img:"https://i.postimg.cc/fTSfRqcd/2025-07-14-133217.png",link:"https://amzn.to/4lxvNpM"},
-      {name:"Roku Streaming Stick",img:"https://i.postimg.cc/50twds96/2025-07-14-133411.png",link:"https://amzn.to/46LPcOS"},
-      {name:"Wi-Fi Ubiquiti U6",img:"https://i.postimg.cc/QC257sQT/2025-07-14-133506.png",link:"https://amzn.to/458JWmn"},
-      {name:"Apple AirTag",img:"https://i.postimg.cc/15FDQnSc/2025-07-14-133606.png",link:"https://amzn.to/4lQC6V1"},
-      {name:"Ring Battery Doorbell",img:"https://i.postimg.cc/141ntBS0/2025-07-14-133716.png",link:"https://amzn.to/44Tpups"},
-      {name:"Apple Watch Smartwatch",img:"https://i.postimg.cc/htgpvWKY/2025-07-14-133810.png",link:"https://amzn.to/4lL9V9U"},
-      {name:"Apple Cellular Smartwatch",img:"https://i.postimg.cc/BQ5BdY2B/2025-07-14-134011.png",link:"https://amzn.to/4loSsnP"},
-      {name:"Apple AirPods Pro 2",img:"https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",link:"https://amzn.to/4eRnT7V"},
-      {name:"Apple AirPods 4",img:"https://m.media-amazon.com/images/I/61iBtxCUabL._AC_SL1500_.jpg",link:"https://amzn.to/4kBsGeY"},
-      {name:"Apple AirPods Max",img:"https://m.media-amazon.com/images/I/81thV7SoLZL._AC_SL1500_.jpg",link:"https://amzn.to/453joDZ"},
-      {name:"Apple AirPods Max + Care",img:"https://m.media-amazon.com/images/I/619kYjRnxLL._AC_SL1500_.jpg",link:"https://amzn.to/44ML7HU"},
-      {name:"Sony WF-1000XM5",img:"https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg",link:"https://amzn.to/3Ivfqet"},
-      {name:"Echo Dot (New Model)",img:"https://m.media-amazon.com/images/I/71IlSs3nCHL._AC_SL1500_.jpg",link:"https://amzn.to/44LQ97d"},
-      {name:"Philips Hue Smart",img:"https://m.media-amazon.com/images/I/61Qv8LhNq-L._AC_SL1500_.jpg",link:"https://amzn.to/44DtkTa"},
-      {name:"Shark RV912S EZ Robot",img:"https://m.media-amazon.com/images/I/71Q3n6DjMwL._AC_SL1500_.jpg",link:"https://amzn.to/3IuBF4w"},
-      {name:"Shark AI Ultra Robot",img:"https://m.media-amazon.com/images/I/71J+4EG7VdL._AC_SL1500_.jpg",link:"https://amzn.to/40jpbCR"},
-      {name:"Fanttik Slim V8 Apex",img:"https://m.media-amazon.com/images/I/51h4XvuP+eL._AC_SL1500_.jpg",link:"https://amzn.to/3ItLb7V"}
-    ];
-    const container = document.getElementById("products");
-    products.forEach(p => {
-      const a = document.createElement("a");
-      a.href = p.link;
-      a.target = "_blank";
-      a.className = "product";
-      a.innerHTML = `<img src="${p.img}" alt="${p.name}"><span>${p.name}</span>`;
-      container.appendChild(a);
-    });
-  </script>
 </body>
 </html>
