@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Amazon Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    .card h3 {
+      font-size: 16px;
+      color: #333;
+      margin: 12px 0;
+      height: 40px;
+      overflow: hidden;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff9900;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #e68a00;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 My Amazon Products 🔥</h1>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="">
+      <h3>Apple AirPods Pro 2</h3>
+      <a class="btn" href="https://amzn.to/4eRnT7V" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61iBtxCUabL._AC_SL1500_.jpg" alt="">
+      <h3>Apple AirPods 4</h3>
+      <a class="btn" href="https://amzn.to/4kBsGeY" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81thV7SoLZL._AC_SL1500_.jpg" alt="">
+      <h3>Apple AirPods Max Wireless Headphones</h3>
+      <a class="btn" href="https://amzn.to/453joDZ" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51181cMWQ-L._AC_SL1000_.jpg" alt="">
+      <h3>Amazon Fire TV Stick 4K Max</h3>
+      <a class="btn" href="https://amzn.to/45eJ9jA" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71gY9E+cTaS._AC_SL1500_.jpg" alt="">
+      <h3>Air Tag 4 pack</h3>
+      <a class="btn" href="https://amzn.to/3IVxMpi" target="_blank">Buy on Amazon</a>
+    </div>
+
+  </div>
+</body>
+</html>
